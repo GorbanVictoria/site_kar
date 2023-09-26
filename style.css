@@ -1,0 +1,343 @@
+body{
+    margin: 0;
+    background-color:#F7F3E8 ;
+}
+
+::-webkit-scrollbar{
+    width:2vmin;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#328c98b5, #215b63);
+    border-radius: 2vmin;
+}
+.head_site{
+    height: 90vmin;
+    width: 100%;
+    background-image: url(pic/fon.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+.head_site:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 90vmin;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+.head_text{
+    
+    height: 50vmin;
+    width: 170vmin;
+    position: absolute;
+    text-align: center;
+    
+}
+
+.head_text h1{
+    color:white;
+    font-size: 52px;
+    margin-top: -3vmin;
+}
+.head_text h3{
+    color:white;
+    font-weight:100;
+    font-size: 46px;
+}
+
+.first_btn{
+    margin-top: 3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 62px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    background: #328C98;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    position: relative;
+    border:none;
+}
+
+.mark{
+    height: 7vmin;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mark div{
+    display:flex;
+    
+    margin-top: 1vmin; 
+    width:100%;
+    animation: mark 15s linear infinite;
+}
+.mark p{
+    white-space: nowrap;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@keyframes mark{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.know{
+    width:100%;
+    height:80vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card_know{
+    width:50vmin;
+    height:65vmin;
+    background-color: white;
+    border-radius: 1vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left:5vmin;
+    padding-right: 5vmin;
+    box-shadow: 5px 5px 10px -2px rgba(0,0,0,0.5);
+    transition: 1.1s;
+}
+
+.card_know:hover{
+    transform: scale(1.1);
+    box-shadow: 7px 7px 8px -2px rgba(0,0,0,0.5);
+    transition: 1.1s;
+    
+}
+
+.card_btn{
+    margin-top: -3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 32px;
+    border-radius: 5px;
+    
+    background: #328C98;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    border:none;
+}
+
+.card_know p{
+    margin-top:-5vmin;
+    margin-bottom: -5vmin;
+    color:#002f36;
+}
+.card_know h1{
+    margin-top:-2vmin;
+    margin-bottom: -5vmin;
+    color:#002f36;
+}
+
+.price{
+    margin-left:10vmin;
+    margin-top:10vmin;
+    width:90%;
+    height:180vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.price_item{
+    background: white;
+    margin:5vmin;
+    border-radius: 3vmin;
+    width:35vmin;
+    height:50vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow:5px 5px 10px -2px rgba(0,0,0,0.5); 
+    transition: 1s;
+}
+
+.price_item:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.price_item h2{
+    font-size: 26px;
+    color:#002f36;
+}
+
+.line{
+    width:15vmin;
+    height:0.35vmin;
+    background-color: #002f36;
+    margin-top:-1.5vmin;
+    margin-bottom: 1.5vmin;
+}
+
+.price_item p{
+    font-size: 23px;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    margin-top: 0vmin;
+    color:#002f36;
+}
+
+.price_item img{
+    width:35vmin;
+    height: 25vmin;
+    border-top-right-radius: 3vmin;
+    border-top-left-radius: 3vmin;
+}
+.price_head h1{
+    text-align: center;
+    font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color:#F7F3E8;
+    margin-top:-7vmin;
+    margin-left:40%;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    color:#002f36;
+}
+.price_head{
+    position: relative;
+    text-align: center;
+    margin-bottom: 15vmin;
+   
+}
+.price_head::before{
+    content:'';
+   display:block;
+   width:100%;
+   height:0.4vmin;
+   background-color:#000;
+   position: absolute;
+   margin-top:-3vmin;
+    
+}
+
+.work{
+    position: relative;
+    text-align: center;
+    
+}
+
+.work h2{
+    text-align: center;
+    font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color:#F7F3E8;
+    margin-top:-7vmin;
+    margin-left:33%;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    color: #002f36;
+}
+
+.work::before{
+    content:'';
+   display:block;
+   width:100%;
+   height:0.4vmin;
+   background-color:#002f36;
+   position: absolute;
+   margin-top:-3vmin;
+}
+
+.work_card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 80vmin;
+    
+    
+}
+
+.work_with_us{
+    width:55vmin;
+    height:55vmin;
+    background-color: white;
+    margin: 5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5vmin;
+    transition: 0.7s;
+}
+
+.work_with_us::before {
+    content: "";
+    position: absolute;
+    margin-left:-28.5vmin;
+    margin-top: -1vmin;
+    width:57vmin;
+    height: 57vmin;
+    background: linear-gradient(-35deg, rgb(9, 64, 79), #03b09e);
+    border-radius: 6vmin;
+    z-index: -1;
+  }
+
+.work_with_us h1{
+    margin-top:4vmin;
+    font-size: 30px;
+    color:#002f36;
+}
+.work_with_us p{
+    margin-top:10vmin;
+    font-size: 20px;
+    color: #717171;;
+}
+.work_with_us img{
+    margin-top: 10vmin;
+    transform: scale(2);
+    
+}
+
+.inside_card{
+    width:56vmin;
+    height:56vmin;
+    background: linear-gradient(-35deg, rgb(9, 64, 79), #03b09e);
+    position: absolute;
+    border-radius: 5vmin;
+    margin-top:-51.2vmin;
+    opacity:0;
+    transition: 0.7s;
+}
+
+.inside_card p{
+    color:white;
+    padding:10vmin;
+    font-size: 24px;
+}
+
+.work_with_us:hover .inside_card{
+    opacity: 1;
+    transition: 0.7s;
+}
